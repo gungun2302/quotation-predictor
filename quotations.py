@@ -12,9 +12,9 @@ from sklearn.preprocessing import LabelEncoder
 # DATABASE CONFIG
 # ------------------------------
 DB_CFG = {
-    "dbname": "logibrain_demo_v2",
-    "user": "abhijeet",
-    "password": "EmlA867Fe7Pm",
+    "dbname": "logibrain_demo",
+    "user": "gunguna",
+    "password": "7Ctzh6di3n35",
     "host": "demo.logibrain.ai",
     "port": 6432
 }
