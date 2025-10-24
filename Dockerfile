@@ -19,7 +19,7 @@ COPY quotations.py model.pkl label_encoders.pkl target_encodings.pkl selected_fe
 
 
 # Expose port
-EXPOSE 80
+EXPOSE $PORT
 
 # Run FastAPI app
-CMD ["uvicorn","quotations:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["sh", "-c", "uvicorn quotations:app --host 0.0.0.0 --port $PORT"]
