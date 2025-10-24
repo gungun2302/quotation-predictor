@@ -112,6 +112,10 @@ def preprocess_new_data(df, label_encoders, target_encodings):
 # ------------------------------
 # PREDICTION ENDPOINT
 # ------------------------------
+
+@app.get("/")
+def home():
+    return {"message": "Quotation Predictor API is running!"}
 @app.get("/predict")
 def predict():
     try:
